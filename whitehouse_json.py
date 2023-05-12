@@ -5,9 +5,10 @@ response = requests.get("http://www.whitehouse.gov/facts/json/whatsnext/economy"
 if response.ok:
     access_data = json.loads(response.content.decode("utf-8"))
     data = access_data[0]
-    output = []
-    for item in access_data:
-        output.append('''<a href="{}" alt="{}">{}</a><br />'''.format(item['url'], item['body'], item['url_title']))
+    output = [
+        f'''<a href="{item['url']}" alt="{item['body']}">{item['url_title']}</a><br />'''
+        for item in access_data
+    ]
     output_string = """\
 <html>
   <head><title>Whitehouse Data</title></head>
@@ -20,4 +21,4 @@ if response.ok:
     print(output_string)
 else:
     import sys
-    sys.exit("Server status code {}".format(response.status_code))
+    sys.exit(f"Server status code {response.status_code}")
