@@ -4,7 +4,7 @@ Jinja2==3.1.4
 Kivy==1.11.1
 Kivy-Garden==0.1.5
 MarkupSafe==0.23
-Pygments==2.15.0
+Pygments==2.18.0
 SQLAlchemy==1.4.52
 SexMachine==0.1.1
 Sphinx==1.8.6
