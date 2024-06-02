@@ -1,4 +1,4 @@
-Cython==0.20.1
+Cython==0.29.37
 Flask==2.3.3
 Jinja2==3.1.4
 Kivy==1.11.1
