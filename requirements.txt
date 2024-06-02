@@ -14,7 +14,7 @@ brewer2mpl==1.4.1
 distribute==0.7.3
 docutils==0.21.2
 dropbox==1.6
-ipython==8.10.0
+ipython==8.25.0
 ipython-sql==0.3.1
 itsdangerous==0.23
 logilab-common==0.61.0
