@@ -39,5 +39,5 @@ requests==2.32.3
 rpy2==2.4.3
 runipy==0.1.5
 six==1.5.2
-sqlparse==0.5.0
+sqlparse==0.5.4
 tornado==6.4.2
